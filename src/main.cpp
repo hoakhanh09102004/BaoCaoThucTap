@@ -18,6 +18,7 @@ const char* mqtt_password = "Hk12345678";
 const char* topic_pub   = "mqtt/temp_humi";
 const char* topic_led   = "mqtt/led";
 const char* topic_relay = "mqtt/relay";
+const char* topic_status = "mqtt/status";
 
 // ===== DHT22 =====
 #define DHTPIN 14
@@ -209,6 +210,8 @@ void loop() {
     String payload = "{";
     payload += "\"temperature\":" + String(t,1) + ",";
     payload += "\"humidity\":" + String(h,1);
+    payload += "\"led\":\"" + ledState + "\",";
+    payload += "\"relay\":\"" + relayState + "\"";
     payload += "}";
 
     Serial.print("Sending: ");
