@@ -209,7 +209,7 @@ void loop() {
   if (client.connected()) {
     String payload = "{";
     payload += "\"temperature\":" + String(t,1) + ",";
-    payload += "\"humidity\":" + String(h,1);
+    payload += "\"humidity\":" + String(h,1)+ ",";
     payload += "\"led\":\"" + ledState + "\",";
     payload += "\"relay\":\"" + relayState + "\"";
     payload += "}";
