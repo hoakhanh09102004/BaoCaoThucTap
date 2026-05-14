@@ -25,7 +25,7 @@ const char* topic_relay = "mqtt/relay";
 DHT dht(DHTPIN, DHTTYPE);
 
 // ===== RELAY + LED =====
-#define RELAY_PIN 5
+#define RELAY_PIN 2
 #define LED_PIN   21
 
 // ===== OLED =====
