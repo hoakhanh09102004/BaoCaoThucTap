@@ -1,0 +1,72 @@
+[
+    {
+        "id": "chart_hum_ultra",
+        "type": "ui_chart",
+        "z": "e5ff2c60f76d8eb0",
+        "name": "",
+        "group": "group_chart_ultra",
+        "order": 2,
+        "width": "10",
+        "height": "5",
+        "label": "Biểu đồ Độ ẩm",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "group_chart_ultra",
+        "type": "ui_group",
+        "name": "Biểu đồ lịch sử",
+        "tab": "tab_ui_ultra",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "tab_ui_ultra",
+        "type": "ui_tab",
+        "name": "Thực tập MQTT Ultra",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0a8d29163df6bac0",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
